@@ -2,8 +2,8 @@
 #define LINO_BASE_CONFIG_H
 
 //uncomment the base you're building
-#define LINO_BASE DIFFERENTIAL_DRIVE // 2WD and Tracked robot w/ 2 motors
-// #define LINO_BASE SKID_STEER      // 4WD robot
+// #define LINO_BASE DIFFERENTIAL_DRIVE // 2WD and Tracked robot w/ 2 motors
+#define LINO_BASE SKID_STEER      // 4WD robot
 // #define LINO_BASE ACKERMANN       // Car-like steering robot w/ 2 motors
 // #define LINO_BASE ACKERMANN1      // Car-like steering robot w/ 1 motor
 // #define LINO_BASE MECANUM         // Mecanum drive robot
