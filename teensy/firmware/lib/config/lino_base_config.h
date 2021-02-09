@@ -139,6 +139,6 @@ ROBOT ORIENTATION
   #define PWM_MIN -PWM_MAX
 #endif
 
-#define STEERING_PIN 7
+#define STEERING_PIN 10
 
 #endif
