@@ -154,3 +154,11 @@
 #error "You could try defining ENCODER_DO_NOT_USE_INTERRUPTS as a kludge."
 #endif
 
+
+  #define CORE_NUM_INTERRUPT	6
+  #define CORE_INT0_PIN		2
+  #define CORE_INT1_PIN		3
+  #define CORE_INT2_PIN		21
+  #define CORE_INT3_PIN		20
+  #define CORE_INT4_PIN		19
+  #define CORE_INT5_PIN		18
