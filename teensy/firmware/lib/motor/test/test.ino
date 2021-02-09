@@ -28,10 +28,25 @@
 
 #define MOTOR_DRIVER Controller::L298
 
-  #define MOTOR1_PWM 5
-  #define MOTOR1_IN_A 32
-  #define MOTOR1_IN_B 52
+  #define MOTOR1_PWM 4
+  #define MOTOR1_IN_A 31
+  #define MOTOR1_IN_B 51
+
+  #define MOTOR2_PWM 5
+  #define MOTOR2_IN_A 32
+  #define MOTOR2_IN_B 52
+
+  #define MOTOR3_PWM 6
+  #define MOTOR3_IN_A 33
+  #define MOTOR3_IN_B 43
+
+  #define MOTOR4_PWM 7
+  #define MOTOR4_IN_A 34
+  #define MOTOR4_IN_B 44
 Controller motor1_controller(MOTOR_DRIVER, MOTOR1_PWM, MOTOR1_IN_A, MOTOR1_IN_B);
+Controller motor2_controller(MOTOR_DRIVER, MOTOR2_PWM, MOTOR2_IN_A, MOTOR2_IN_B);
+Controller motor3_controller(MOTOR_DRIVER, MOTOR3_PWM, MOTOR3_IN_A, MOTOR3_IN_B);
+Controller motor4_controller(MOTOR_DRIVER, MOTOR4_PWM, MOTOR4_IN_A, MOTOR4_IN_B);
 
 void setup()
 {
@@ -41,11 +56,23 @@ void setup()
 void loop()
 {
   motor1_controller.spin(0);
+  motor2_controller.spin(0);
+  motor3_controller.spin(0);
+  motor4_controller.spin(0);
   delay(5000);
   motor1_controller.spin(40);
+  motor2_controller.spin(40);
+  motor3_controller.spin(40);
+  motor4_controller.spin(40);
   delay(5000);
   motor1_controller.spin(0);
+  motor2_controller.spin(0);
+  motor3_controller.spin(0);
+  motor4_controller.spin(0);
   delay(5000);
   motor1_controller.spin(-40);
+  motor2_controller.spin(-40);
+  motor3_controller.spin(-40);
+  motor4_controller.spin(-40);
   delay(5000);
 }
