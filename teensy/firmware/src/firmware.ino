@@ -195,6 +195,7 @@ void moveBase()
     {
         current_vel = kinematics.getVelocities(current_rpm1, current_rpm2, current_rpm3, current_rpm4);
     }
+    Serial.println(current_rpm1);
     
     //pass velocities to publisher object
     raw_vel_msg.linear_x = current_vel.linear_x;
