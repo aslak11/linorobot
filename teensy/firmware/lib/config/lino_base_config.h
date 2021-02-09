@@ -75,11 +75,11 @@ ROBOT ORIENTATION
 
   #define MOTOR1_PWM 4
   #define MOTOR1_IN_A 31
-  #define MOTOR1_IN_B 41
+  #define MOTOR1_IN_B 51
 
   #define MOTOR2_PWM 5
   #define MOTOR2_IN_A 32
-  #define MOTOR2_IN_B 42
+  #define MOTOR2_IN_B 52
 
   #define MOTOR3_PWM 6
   #define MOTOR3_IN_A 33

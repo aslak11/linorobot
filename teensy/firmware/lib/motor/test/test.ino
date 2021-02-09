@@ -28,9 +28,9 @@
 
 #define MOTOR_DRIVER Controller::L298
 
-#define MOTOR1_PWM 7
-#define MOTOR1_IN_A 20
-#define MOTOR1_IN_B 21
+  #define MOTOR1_PWM 5
+  #define MOTOR1_IN_A 32
+  #define MOTOR1_IN_B 52
 Controller motor1_controller(MOTOR_DRIVER, MOTOR1_PWM, MOTOR1_IN_A, MOTOR1_IN_B);
 
 void setup()
