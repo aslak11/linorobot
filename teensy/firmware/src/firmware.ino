@@ -114,19 +114,19 @@ void loop()
     if ((millis() - prev_imu_time) >= (1000 / IMU_PUBLISH_RATE))
     {
         //sanity check if the IMU is connected
-        if (!imu_is_initialized)
-        {
-            imu_is_initialized = initIMU();
+        // if (!imu_is_initialized)
+        // {
+        //     imu_is_initialized = initIMU();
 
-            if(imu_is_initialized)
-                nh.loginfo("IMU Initialized");
-            else
-                nh.logfatal("IMU failed to initialize. Check your IMU connection.");
-        }
-        else
-        {
-            publishIMU();
-        }
+        //     if(imu_is_initialized)
+        //         nh.loginfo("IMU Initialized");
+        //     else
+        //         nh.logfatal("IMU failed to initialize. Check your IMU connection.");
+        // }
+        // else
+        // {
+        //     publishIMU();
+        // }
         prev_imu_time = millis();
     }
 
@@ -195,7 +195,6 @@ void moveBase()
     {
         current_vel = kinematics.getVelocities(current_rpm1, current_rpm2, current_rpm3, current_rpm4);
     }
-    Serial.println(current_rpm1);
     
     //pass velocities to publisher object
     raw_vel_msg.linear_x = current_vel.linear_x;
